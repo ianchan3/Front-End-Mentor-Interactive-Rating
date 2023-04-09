@@ -1,0 +1,42 @@
+.ThankYouPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #141518;
+  height: 100vh;
+}
+
+.ThankYouPage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1D222A;
+  width: 30%;
+  height: 55%;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.ThankYouPage-container * {
+  max-width: 85%;
+  color: white;
+}
+
+.ThankYouPage-container h1 {
+  margin-bottom: 0;
+}
+
+#rating-description {
+  margin: 1rem 0 0;
+  background-color: var(--color-dark-blue);
+  color: var(--color-orange);
+  border-radius: 30px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.ThankYouPage-container img {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}

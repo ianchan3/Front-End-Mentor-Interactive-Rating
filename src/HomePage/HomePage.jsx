@@ -2,15 +2,11 @@ import "./HomePage.css";
 import Star from '../assets/icon-star.svg';
 import { useState} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import ThankYouPage from "../ThankYouPage";
+import ThankYouPage from "../ThankYouPage/ThankYouPage";
 
 
 export default function HomePage() {
   const [selection, setSelection] = useState();
-
-
-  const handleSubmit = () => {
-  }
 
   const rating1 = 1;
   const rating2 = 2;
@@ -37,7 +33,7 @@ export default function HomePage() {
             <li onClick={() => setSelection(rating4)}>{rating4}</li>
             <li onClick={() => setSelection(rating5)}>{rating5}</li>
           </ul>
-          <input name="rating" value={selection} />
+          <input name="rating" id="rating" value={selection} />
           <div className='HomePage-submit-button'>
             <button>SUBMIT</button>
           </div>
